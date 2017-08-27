@@ -7,6 +7,10 @@ To begin a MVC application, there are a few steps that I would call, *'The Found
 - Views (**V**)
 - Server (**C**)
 
+
+<br>
+
+
 #### Quick Links:
 [Planning the App](#planning-the-app)
 - [Creating the Database](#creating-the-database)
