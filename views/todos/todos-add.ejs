@@ -1,0 +1,11 @@
+<% include ../partials/header %>
+
+<h1>Add a Todo</h1>
+<form action="/todos" method="POST">
+  <input name="title" type="text" placeholder="Title" autofocus>
+  <input name="category" type="text" placeholder="Category">
+  <input name="description" type="textarea" placeholder="description">
+  <input type="submit" value="ADD TODO">
+</form>
+
+<% include ../partials/footer %>

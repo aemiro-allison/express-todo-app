@@ -23,4 +23,17 @@ todoController.show = (req, res) => {
     }).catch(errorHandler(req, res));
 };
 
+todoController.create = (req, res) => {
+  const { title, category, description } = req.body;
+
+  Todo.create({
+    title,
+    category,
+    description,
+  })
+    .then(() => {
+      res.status(200).redirect('/todos');
+    }).catch(errorHandler(req, res));
+};
+
 module.exports = todoController;
