@@ -8,9 +8,10 @@ To begin a MVC application, there are a few steps that I would call, *'The Found
 - Server (**C**)
 
 #### Quick Links:
-<p>[Creating the Database](#creating-the-database)</p>
-<p>[Creating the Views](#creating-the-views)</p>
-<p>[Configuring the Server](#configuring-the-server)</p>
+[Planning the App](#planning-the-app)
+- [Creating the Database](#creating-the-database)
+- [Creating the Views](#creating-the-views)
+- [Configuring the Server](#configuring-the-server)
 
 
 <br>
