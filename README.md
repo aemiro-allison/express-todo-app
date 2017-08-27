@@ -13,13 +13,13 @@ To begin a MVC application, there are a few steps that I would call 'The Foundat
 <br>
 
 
-**Database:**
+#### Database:
 Technology | Description
 --- | ---
 Postgres |  A powerful, open source object-relational database system to store data.
 pg-promise | The nodejs driver to connect to the Postgres database.
 
-**Views:**
+#### Views:
 Technology | Description
 --- | ---
 HTML | The structure of a web page
@@ -27,7 +27,7 @@ CSS | Provide styling to the HTML of a web page.
 EJS | The templating engine that generates the HTML with a template and its data on the server.
 Javascript | Allowing a web page to be interactive by allowing additional functionality to the web page.
 
-**Server:**
+#### Server:
 Technology | Description
 --- | ---
 Node.js | The server that is a javacsript client side runtime that allows javacsript to run outside of the browser.
