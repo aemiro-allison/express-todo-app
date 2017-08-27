@@ -12,6 +12,11 @@ To begin a MVC application, there are a few steps that I would call, *'The Found
 
 
 #### Quick Links:
+
+[Installing the App](#installing-the-app)
+
+[Technologies Used](#technologies-used)
+
 [Planning the App](#planning-the-app)
 - [Creating the Database](#creating-the-database)
 - [Creating the Views](#creating-the-views)
@@ -21,7 +26,31 @@ To begin a MVC application, there are a few steps that I would call, *'The Found
 <br>
 
 
-### Technologies Used
+## Installing the App
+
+### Requirements:
+
+- node version: `>=v8.2.1`
+
+- npm version: `>=5.3.0`
+
+- Have postgresSQL installed and running on your machine.
+
+
+First fork and clone `git clone <fork url>` into a directory of your chose.
+
+Run `npm install` to install the project's dependencies.
+
+Run `npm run setup` which will create and popluate a postgres database.
+
+After, run `npm run start` to start the server.
+
+
+<hr>
+<br>
+
+
+## Technologies Used
 ---
 #### Database:
 Technology | Description

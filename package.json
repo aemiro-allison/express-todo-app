@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js",
-    "start": "psql -f ./db/migrations/migration-27082017.sql && psql -f ./db/seeds/seed.sql && node server.js"
+    "setup": "psql -f ./db/migrations/migration-27082017.sql && psql -f ./db/seeds/seed.sql",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
