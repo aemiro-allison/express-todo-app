@@ -4,6 +4,9 @@ const methodOverride = require('method-override');
 const path = require('path');
 const logger = require('morgan');
 
+// import routers
+const todoRoutes = require('./routes/todo-routes');
+
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -21,6 +24,8 @@ app.get('/', (req, res) => {
     page: 'index',
   });
 });
+
+app.use('/todos', todoRoutes);
 
 app.get('*', (req, res) => {
   res.status(404).json({

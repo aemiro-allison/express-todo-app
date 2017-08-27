@@ -1,0 +1,11 @@
+<% include ../partials/header %>
+
+<% for (let todo of data) { %>
+  <p>Title:       <%= todo.title %></p>
+  <p>Completion:  <%= todo.completion %></p>
+  <p>Category:    <%= todo.category %></p>
+  <p>Description: <%= todo.description %></p>
+  <hr>
+<% } %>
+
+<% include ../partials/footer %>
