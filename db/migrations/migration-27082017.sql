@@ -1,4 +1,6 @@
 -- Connect to the correct database to run command.
+CREATE DATABASE express_todo_app;
+
 \c express_todo_app;
 
 -- Create a table to store todos
