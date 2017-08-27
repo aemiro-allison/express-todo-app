@@ -7,6 +7,11 @@ To begin a MVC application, there are a few steps that I would call, *'The Found
 - Views (**V**)
 - Server (**C**)
 
+#### Quick Links:
+[Creating the Database](#creating-the-database)
+[Creating the Views](#creating-the-views)
+[Configuring the Server](#configuring-the-server)
+
 
 <br>
 
@@ -57,7 +62,7 @@ To start creating the todo app, the database structure for storing each todo was
 - Description
 <br>
 
-### The Views
+### Creating The Views
 
 The views are what the client will be seeing and interfacing with. Therefore, **wireframes were used to mockup how a user would interact with the completely todo app**. The wireframes allow for testing user stories to see whether or not any idea for the app is feasible. The following wireframes were used to guide this app:
 
