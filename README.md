@@ -8,9 +8,9 @@ To begin a MVC application, there are a few steps that I would call, *'The Found
 - Server (**C**)
 
 #### Quick Links:
-[Creating the Database](#creating-the-database)
-[Creating the Views](#creating-the-views)
-[Configuring the Server](#configuring-the-server)
+<p>[Creating the Database](#creating-the-database)</p>
+<p>[Creating the Views](#creating-the-views)</p>
+<p>[Configuring the Server](#configuring-the-server)</p>
 
 
 <br>
@@ -60,7 +60,10 @@ To start creating the todo app, the database structure for storing each todo was
 - Completion Status
 - Category
 - Description
+
+
 <br>
+
 
 ### Creating The Views
 
