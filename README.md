@@ -92,21 +92,26 @@ The server will have to listen to different routes for any requests from the cli
 
 ```node
     // Home Page
-    /
+    GET /
     
     // About Page
-    /about
+    GET /about
     
     // Display all todos
-    /todos
+    GET /todos
     
     // Disply a single todo with its description
-    /todos/:id
+    GET /todos/:id
     
     // Add/Create todo
-    /todos/add
+    POST /todos/add
     
     // Edit Todo
-    /todos/edit/:id
+    GET /todos/edit/:id // render the edit page
+    PUT /todos/:id
+
+    // Delete Todo
+    DELETE /todos/:id
+
 ```
 To allow the user to manipulate the todos, routes for handling CREATE, EDIT and DELETE todos were created. The DELETE route however, does not need a new view and will redirect the user back to the `/todos` which displays all todos.
