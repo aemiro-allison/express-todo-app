@@ -1,17 +1,19 @@
 {
   "name": "express-todo-app",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "To begin a MVC application, there are a few steps that I would call 'The Foundations of a MVC app' that need to be planned and created before getting into the core logic of the app. These foundations are the:",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git@git.generalassemb.ly:aemiro-allison/express-todo-app.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Aemiro Allison",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^4.5.0",
