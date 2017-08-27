@@ -9,7 +9,10 @@ To begin a MVC application, there are a few steps that I would call 'The Foundat
 
 ### Technologies Used
 
+
 <br>
+
+
 **Database:**
 Technology | Description
 --- | ---
@@ -29,7 +32,10 @@ Technology | Description
 --- | ---
 Node.js | The server that is a javacsript client side runtime that allows javacsript to run outside of the browser.
 Express.js | A Node.js framework that makes using Node.js as a server more developer friendly.
+
+
 <br>
+
 
 ## Planning the app:
 
@@ -46,6 +52,10 @@ To start creating the todo app, the database structure for storing each todo was
 ### The Views
 
 The views are what the client will be seeing and interfacing with. Therefore, wireframes were used to mockup how a user would interact with the completely todo app. The wireframes allow for testing user stories to see whether or not any idea for the app is feasible. The following wireframes were used to guide this app:
+
+
+<br>
+
 
 #### Landing on the home page and going to the to-do page
 
@@ -91,4 +101,4 @@ The server will have to listen to different routes for any requests from the cli
     // Edit Todo
     /todos/edit/:id
 ```
-To allow the user to manipulate the todos, routes for handling CREATE, EDIT and DELETE todos were created. The DELETE route does not need a new view and will redirect the user back to the `/todos` which displays all todos.
+To allow the user to manipulate the todos, routes for handling CREATE, EDIT and DELETE todos were created. The DELETE route however, does not need a new view and will redirect the user back to the `/todos` which displays all todos.
