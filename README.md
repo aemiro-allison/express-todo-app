@@ -1,6 +1,6 @@
 # Initial Approach
 
-To begin a MVC application, there are a few steps that I would call 'The Foundations of a MVC app' that need to be planned and created before getting into the core logic of the app. These foundations are the: 
+To begin a MVC application, there are a few steps that I would call, *'The Foundations of a MVC app'*, that need to be planned out and created before getting into the core logic of the app. These foundations that need to be planned is as follows: 
 
 #### Foundations of a MVP app:
 - Database (**M**)
@@ -49,7 +49,7 @@ Express.js | A Node.js framework that makes using Node.js as a server more devel
 
 ### Creating the Database
 
-To start creating the todo app, the database structure for storing each todo was though out. Our todo would have the following attributes:
+To start creating the todo app, the database structure for storing each todo was thought out. Our todo would have the following fields:
 
 - Title
 - Completion Status
@@ -59,7 +59,7 @@ To start creating the todo app, the database structure for storing each todo was
 
 ### The Views
 
-The views are what the client will be seeing and interfacing with. Therefore, wireframes were used to mockup how a user would interact with the completely todo app. The wireframes allow for testing user stories to see whether or not any idea for the app is feasible. The following wireframes were used to guide this app:
+The views are what the client will be seeing and interfacing with. Therefore, **wireframes were used to mockup how a user would interact with the completely todo app**. The wireframes allow for testing user stories to see whether or not any idea for the app is feasible. The following wireframes were used to guide this app:
 
 
 <br>
@@ -88,7 +88,7 @@ The views are what the client will be seeing and interfacing with. Therefore, wi
 
 ### Configuring the Server
 
-The server will have to listen to different routes for any requests from the client and appriopriately handle that request. For the todo app, the public routes that the user will be able to request will be based on the wireframes above:
+The server will have to listen to different routes for any requests from the client and appriopriately handle that request. For the todo app, the public routes that the user will be able to request will be **based on the wireframes above**:
 
 ```node
     // Home Page
@@ -114,4 +114,4 @@ The server will have to listen to different routes for any requests from the cli
     DELETE /todos/:id
 
 ```
-To allow the user to manipulate the todos, routes for handling CREATE, EDIT and DELETE todos were created. The DELETE route however, does not need a new view and will redirect the user back to the `/todos` which displays all todos.
+To allow the user to manipulate the todos, routes for handling `CREATE`, `EDIT` and `DELETE` todos were created. The `DELETE` route however, does not need a new view and will redirect the user back to the `/todos` which displays all todos.
