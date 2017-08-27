@@ -36,4 +36,18 @@ todoController.create = (req, res) => {
     }).catch(errorHandler(req, res));
 };
 
+todoController.update = (req, res) => {
+  const { title, completion, category, description } = req.body;
+
+  Todo.update({
+    title,
+    completion,
+    category,
+    description,
+  }, req.params.id)
+    .then(() => {
+      res.status(200).redirect('/todos');
+    }).catch(errorHandler(req, res));
+};
+
 module.exports = todoController;

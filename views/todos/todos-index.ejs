@@ -5,6 +5,8 @@
   <p>Completion:  <%= todo.completion %></p>
   <p>Category:    <%= todo.category %></p>
   <p>Description: <%= todo.description %></p>
+  <a href="/todos/<%= todo.id %>">VIEW</a>
+  <a href="/todos/edit/<%= todo.id %>">EDIT</a>
   <hr>
 <% } %>
 

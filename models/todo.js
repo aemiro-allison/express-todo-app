@@ -16,4 +16,16 @@ Todo.create = todo =>
     ($1, $2, $3)
     RETURNING *`, [todo.title, todo.category, todo.description]);
 
+Todo.update = (todo, id) =>
+  db.one(`UPDATE ${tableName}
+    SET
+    title = $1,
+    completion = $2,
+    category = $3,
+    description = $4
+    WHERE id = $5
+    RETURNING *`, [
+      todo.title, todo.completion, todo.category, todo.description, id,
+    ]);
+
 module.exports = Todo;
