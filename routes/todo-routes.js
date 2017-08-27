@@ -7,8 +7,9 @@ const todoRoutes = express.Router();
 
 todoRoutes.get('/', todoController.index);
 
+// render the add page
 todoRoutes.get('/add', (req, res) => res.render('todos/todos-add'));
-
+// render the edit page with the todo content.
 todoRoutes.get('/edit/:id', (req, res) => {
   Todo.findOne(req.params.id)
     .then((todo) => {
@@ -23,4 +24,6 @@ todoRoutes.get('/:id', todoController.show);
 
 todoRoutes.post('/', todoController.create);
 todoRoutes.put('/:id', todoController.update);
+todoRoutes.delete('/:id', todoController.delete);
+
 module.exports = todoRoutes;

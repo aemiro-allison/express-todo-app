@@ -50,4 +50,11 @@ todoController.update = (req, res) => {
     }).catch(errorHandler(req, res));
 };
 
+todoController.delete = (req, res) => {
+  Todo.destroy(req.params.id)
+    .then(() => {
+      res.redirect('/todos');
+    }).catch(errorHandler(req, res));
+};
+
 module.exports = todoController;

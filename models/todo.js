@@ -3,6 +3,7 @@ const db = require('../db/config');
 const Todo = {};
 const tableName = 'todos';
 
+
 Todo.findAll = () =>
   db.query(`SELECT * FROM ${tableName}`);
 
@@ -27,5 +28,9 @@ Todo.update = (todo, id) =>
     RETURNING *`, [
       todo.title, todo.completion, todo.category, todo.description, id,
     ]);
+
+Todo.destroy = id =>
+  db.query(`DELETE FROM ${tableName} WHERE id = $1`, [id]);
+
 
 module.exports = Todo;
