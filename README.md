@@ -67,23 +67,23 @@ The views are what the client will be seeing and interfacing with. Therefore, wi
 
 #### Landing on the home page and going to the to-do page
 
-![home-todo](./assets/home-todo.jpg)
+![home-todo](./readme-assets/home-todo.jpg)
 
 #### Adding a todo
 
-![add-todo](./assets/add-todo.jpg)
+![add-todo](./readme-assets/add-todo.jpg)
 
 #### Getting info from a todo
 
-![info-todo](./assets/info-todo.jpg)
+![info-todo](./readme-assets/info-todo.jpg)
 
 #### Editing a todo
 
-![todo-edit](./assets/todo-edit.jpg)
+![todo-edit](./readme-assets/todo-edit.jpg)
 
 #### Deleting a todo
 
-![todo-delte](./assets/todo-delete.jpg)
+![todo-delte](./readme-assets/todo-delete.jpg)
 <br>
 
 ### Configuring the Server
