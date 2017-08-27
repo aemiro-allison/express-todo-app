@@ -37,6 +37,9 @@ To begin a MVC application, there are a few steps that I would call, *'The Found
 - Have postgresSQL installed and running on your machine.
 
 
+<br>
+
+
 First fork and clone `git clone <fork url>` into a directory of your chose.
 
 Run `npm install` to install the project's dependencies.
@@ -46,12 +49,13 @@ Run `npm run setup` which will create and popluate a postgres database.
 After, run `npm run start` to start the server.
 
 
+<br>
 <hr>
 <br>
 
 
 ## Technologies Used
----
+
 #### Database:
 Technology | Description
 --- | ---
