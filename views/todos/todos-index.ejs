@@ -1,16 +1,25 @@
 <% include ../partials/header %>
 
 <% for (let todo of data) { %>
-  <p>Title:       <%= todo.title %></p>
-  <p>Completion:  <%= todo.completion %></p>
-  <p>Category:    <%= todo.category %></p>
-  <p>Description: <%= todo.description %></p>
-  <a href="/todos/<%= todo.id %>">VIEW</a>
-  <a href="/todos/edit/<%= todo.id %>">EDIT</a>
-  <form action="/todos/<%= todo.id %>?_method=DELETE" method="POST">
-    <input type="submit" value="DELETE">
-  </form>
-  <hr>
+  <div class="todo">
+
+    <p class="title"><%= todo.title %></p>
+    <span class="completion <%- todo.completion === 'done'? 'done' : 'to-do' %>">
+      [<%= todo.completion %>]
+    </span>
+    <p class="category"><%= todo.category %></p>
+
+    <p class="description"><%= todo.description %></p>
+
+    <div class="inputs">
+      <a href="/todos/<%= todo.id %>">VIEW</a>
+      <a href="/todos/edit/<%= todo.id %>">EDIT</a>
+      <form action="/todos/<%= todo.id %>?_method=DELETE" method="POST">
+        <input type="submit" value="DELETE">
+      </form>
+    </div>
+
+  </div>
 <% } %>
 
 <% include ../partials/footer %>

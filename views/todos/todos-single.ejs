@@ -1,9 +1,24 @@
 <% include ../partials/header %>
 
-  <h1>Title:       <%= data.title %></h1>
-  <h3>Completion:  <%= data.completion %></h3>
-  <small>Category: <%= data.category %></small>
-  <p>Description:  <%= data.description %></p>
-  <hr>
+<a href="/todos">Go Back</a>
+
+  <div class="todo">
+
+    <p class="title"><%= data.title %></p>
+    <span class="completion <%- data.completion === 'done'? 'done' : 'to-do' %>">
+      [<%= data.completion %>]
+    </span>
+    <p class="category"><%= data.category %></p>
+
+    <p class="description"><%= data.description %></p>
+
+    <div class="inputs">
+      <a href="/todos/edit/<%= data.id %>">EDIT</a>
+      <form action="/todos/<%= data.id %>?_method=DELETE" method="POST">
+        <input type="submit" value="DELETE">
+      </form>
+    </div>
+
+  </div>
 
 <% include ../partials/footer %>

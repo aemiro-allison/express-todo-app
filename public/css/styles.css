@@ -1,7 +1,172 @@
-body,html {
+body, html {
   margin: 0;
   height: 100%;
   width: 100%;
-  background: #eee;
+  font-size: 16px;
   font-family: 'Roboto', sans-serif;
+  background: pink;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+a { color: inherit; }
+
+h1 { text-align: center; font-size: 3em;}
+
+table {
+  background: #eee;
+  box-shadow: 0px 7px 7px 2px rgba(0,0,0,0.24);
+  margin-bottom: 10%;
+}
+
+td {
+  background: #fff;
+  color: #222;
+  border: 1px solid #ccc;
+  padding: 1em;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: pink;
+  padding: 12px;
+  color: #222;
+}
+
+header #logo {
+  font-size: 2.5em;
+  color: blue;
+}
+
+header nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+header nav>a {
+  text-decoration: none;
+  width: 6em;
+  cursor: pointer;
+  transition: all .2s ease-in;
+}
+
+header nav>a:hover {
+  color: #F012BE;
+}
+
+#wrapper {
+  position: relative;
+  max-width: 800px;
+  min-height: 80vh;
+  margin: 0 auto;
+  padding: 7% 0;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.image-center {
+  display: block;
+  margin:0 auto;
+  width: 50vh;
+  height: 50vh;
+}
+
+/* Todo Styles */
+
+.todo {
+  min-width: 300px;
+  max-width: 500px;
+  margin:0 auto;
+  padding: 20px;
+  background: #f3f3f3;
+  box-shadow: 0px 5px 7px 3px rgba(0,0,0,0.24);
+  border-radius: 4px;
+  overflow: scroll;
+}
+
+.title {
+  display: inline-block;
+  width: calc(50%);
+  font-size: 1.5em;
+  margin:0;
+}
+
+.completion {
+  min-width: 49%;
+  display: inline-block;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.category {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.description {
+  width: 100%;
+  padding: 8px 0;
+  font-size: 1em;
+  display: block;
+}
+
+.inputs {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.inputs * {
+  text-decoration: none;
+  color: inherit;
+  background: none;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: Arial;
+  line-height: 1.2em;
+  letter-spaceing: 0.8px;
+  cursor: pointer;
+}
+
+.inputs *:hover {
+  color: blue;
+}
+/* End of Todo Styles */
+
+.hidden {
+  display: none;
+}
+
+.to-do {
+  color: #FF851B;
+}
+
+.done {
+  color: #2ECC40;
 }
