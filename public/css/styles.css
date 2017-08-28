@@ -72,9 +72,11 @@ header nav>a:hover {
 #wrapper {
   position: relative;
   max-width: 800px;
+  min-wdith: 400px;
   min-height: 80vh;
   margin: 0 auto;
   padding: 7% 0;
+  align-items: center;
 }
 
 footer {
@@ -175,4 +177,30 @@ footer {
 
 .done {
   color: #2ECC40;
+}
+
+form.change-todo {
+  width: 300px;
+  margin:0 auto;
+}
+
+form.change-todo input[name] {
+  width: 100%;
+  font-size: 1.2em;
+  color: #ccc;
+  padding: 8px 12px;
+  margin: 5px 0;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+}
+
+form.change-todo input[type="submit"] {
+  padding: 8px 12px;
+  background: dodgerblue;
+  border:0;
+  border-radius: 4px;
+  margin-top: 20px;
+  font-size: 1.25em;
+  color: #000;
+  cursor: pointer;
 }

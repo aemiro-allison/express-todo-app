@@ -3,7 +3,7 @@
 <a href="/todos">Go Back</a>
 
 <h1>Edit this Todo</h1>
-<form action="/todos/<%= data.id %>?_method=PUT" method="POST">
+<form class="change-todo" action="/todos/<%= data.id %>?_method=PUT" method="POST">
   <input name="title" type="text" value="<%= data.title %>" autofocus>
   <input name="completion" type="text" value="<%= data.completion %>">
   <input name="category" type="text" value="<%= data.category %>">
