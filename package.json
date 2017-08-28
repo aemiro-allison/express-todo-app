@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js",
-    "setup": "psql -f ./db/migrations/migration-27082017.sql && psql -f ./db/seeds/seed.sql",
+    "setup": "psql -f ./db/migrations/migration-27082017.sql && (cd ./db/seeds/; psql -f seed.sql)",
+    "destroy": "dropdb express_todo_app",
     "start": "node server.js"
   },
   "repository": {

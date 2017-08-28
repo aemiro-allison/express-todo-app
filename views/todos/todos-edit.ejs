@@ -1,13 +1,12 @@
 <% include ../partials/header %>
 
-<a href="/todos">Go Back</a>
-
 <h1>Edit this Todo</h1>
 <form class="change-todo" action="/todos/<%= data.id %>?_method=PUT" method="POST">
   <input name="title" type="text" value="<%= data.title %>" autofocus>
   <input name="completion" type="text" value="<%= data.completion %>">
   <input name="category" type="text" value="<%= data.category %>">
   <input name="description" type="textarea" value="<%= data.description %>">
+  <a href="/todos">< BACK</a>
   <input type="submit" value="EDIT TODO">
 </form>
 
