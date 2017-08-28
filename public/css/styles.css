@@ -3,7 +3,8 @@ body, html {
   height: 100%;
   width: 100%;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.1px;
   background: pink;
 }
 
@@ -14,7 +15,11 @@ body, html {
 
 a { color: inherit; }
 
-h1 { text-align: center; font-size: 3em;}
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+}
 
 table {
   background: #eee;
@@ -39,8 +44,9 @@ header {
 }
 
 header #logo {
-  font-size: 2.5em;
-  color: blue;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: 'Baloo Bhaijaan';
 }
 
 header nav {
